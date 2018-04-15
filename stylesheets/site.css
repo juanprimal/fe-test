@@ -57,7 +57,7 @@ a:hover {
         -ms-flex-pack: center;
             justify-content: center; }
     .header .header-brand__image {
-      max-height: 28px;
+      height: 28px;
       width: 100%; }
   .header__menu-container {
     padding-left: 0; }
