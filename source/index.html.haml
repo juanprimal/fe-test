@@ -1,0 +1,115 @@
+---
+title: Self Assessment
+---
+
+- content_for :current_menu_option do
+  = image_tag "SA.png", class: 'main-menu__image'
+  %span.main-menu__text
+    Self Assessment
+
+- content_for :sub_header do
+  /secondary header
+  %section.sub-header
+    .row.no-gutters
+      .col-md-8
+        .custom-tabs
+          %ul.nav.nav-tabs#custom-tabs{:role => "tablist"}
+            %li.nav-item
+              %a.nav-link.active{"aria-controls" => "dashboard", "aria-selected" => "true", "data-toggle" => "tab", :href => "#dashboard2", 'data-target' => "#dashboard", :role => "tab"}
+                Dashboard
+            %li.nav-item
+              %a.nav-link{"aria-controls" => "option1", "aria-selected" => "false", "data-toggle" => "tab", :href => "#option12", 'data-target' => "#option1", :role => "tab"}
+                Option With Long Text
+            %li.nav-item
+              %a.nav-link{"aria-controls" => "option2", "aria-selected" => "false", "data-toggle" => "tab", :href => "#option22", 'data-target' => "#option2", :role => "tab"}
+                Option 2
+
+
+      .col-md-4
+        /call to action section
+        .tab-content-extra
+          = link_to "#custom-tabs", class: 'main-menu__toggler toggle-menu d-md-none float-left' do
+            = image_tag "hamburguer-white.png"
+
+          .tab-pane.active
+            %a.btn.btn-primary--green
+              SA longer Call to Action
+          .tab-pane
+            %a.btn.btn-primary--green
+              Call to Action Long Text
+          .tab-pane
+            %a.btn.btn-primary--green
+              CTA 2
+
+/ site content
+%section.sub-content
+  .tab-content
+    #dashboard.tab-pane.fade.show.active{"aria-labelledby" => "dashboard-tab", :role => "tabpanel"}
+      %h1
+        Self Assessment Dashboard
+
+      .box
+        .row
+          .col-md-6
+            .demo__image
+          .col-md-6
+            .demo__text
+            .demo__text
+            .demo__text
+            .demo__text
+            .demo__text
+            .demo__text
+            .demo__text
+
+        .row
+          .col-md-12
+            .demo__text
+            .demo__text
+            .demo__text
+            .demo__text
+            .demo__text
+
+        .row
+          .col-md-4
+            .demo__image
+          .col-md-4
+            .demo__image
+          .col-md-4
+            .demo__image
+
+        .row
+          .col-md-12
+            .demo__text
+            .demo__text
+            .demo__text
+            .demo__text
+            .demo__text
+
+
+    #option1.tab-pane.fade{"aria-labelledby" => "option1-tab", :role => "tabpanel"}
+      %h1
+        Self Assessment Long Text
+
+      .box
+        .row
+          .col-md-12
+            .demo__text
+            .demo__text
+            .demo__text
+            .demo__text
+            .demo__text
+
+    #option2.tab-pane.fade{"aria-labelledby" => "option2-tab", :role => "tabpanel"}
+      %h1
+        Self Assessment Option 2
+
+      .box
+        .row
+          .col-md-12
+            .demo__text
+            .demo__text
+            .demo__text
+            .demo__text
+            .demo__text
+
+

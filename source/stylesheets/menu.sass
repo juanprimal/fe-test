@@ -1,0 +1,152 @@
+/*** menu styles ***/
+.main-menu
+  position: relative
+  min-width: 320px
+  +mobile
+    min-width: 300px
+
+  &__toggler
+    position: relative
+    display: inline-block
+    margin: 20px 14px 20px 22px
+    z-index: 1050
+    +mobile
+      margin: 20px 14px 20px 0
+    img
+      width: 28px
+      height: auto
+
+  &__current
+    display: inline-block
+
+  &__image
+    width: 24px
+    height: 24px
+  &__text
+    color: #3a6cbc
+    +mobile
+      display: none
+
+
+
+  .dropdown
+    list-style: none
+    margin: 0
+    padding: 0
+    background: #fff
+    position: absolute
+    top: 0
+    left: 0
+    z-index: 1040
+    width: 100%
+    pointer-events: none
+    -webkit-box-shadow: 10px 10px 70px -17px rgba(0,0,0,0.75)
+    -moz-box-shadow: 10px 10px 70px -17px rgba(0,0,0,0.75)
+    box-shadow: 10px 10px 70px -17px rgba(0,0,0,0.75)
+    max-height: 0
+    overflow: hidden
+    //opacity: 0
+    -webkit-transition: max-height 200ms ease-out
+    -moz-transition: max-height 200ms ease-out
+    -o-transition: max-height 200ms ease-out
+    transition: max-height 200ms ease-out
+
+    +mobile
+      left: -16px
+
+    &.toggled
+      //opacity: 1
+      pointer-events: all
+      max-height: 400px
+      -webkit-transition: max-height 400ms ease-in
+      -moz-transition: max-height 400ms ease-in
+      -o-transition: max-height 400ms ease-in
+      transition: max-height 400ms ease-in
+
+    &__item
+      padding: 0 10px 0 64px
+      margin: 0
+      font-size: 18px
+      color: #3a6cbc
+
+
+      &:first-child
+        margin: 18px 0 5px 64px
+        font-size: 20px
+        padding-left: 0
+
+
+
+      &:last-child
+        margin-bottom: 15px
+
+    &__link
+      color: #3a6cbc
+      display: inline-block
+      padding: 8px 0
+      &:hover
+        color: #1f3b67
+
+    &__image
+      width: 24px
+      height: 24px
+
+    &__text
+      vertical-align: middle
+
+.main-controls
+  display: block
+  list-style: none
+  margin: 0
+  padding: 0
+  text-align: right
+
+  &__item
+    display: inline-block
+    margin-right: 30px
+    color: #3a6cbc
+
+    &:last-child
+      margin-right: 11px
+
+    +mobile
+      margin-right: 10px
+
+  &__icon
+    width: auto
+    height: 24px
+    margin: 20px 0
+
+  .notifications
+    &__counter
+      background-color: #fd4f52
+      color: #fff
+      display: inline-block
+      border-radius: 30px
+      height: 24px
+      min-width: 24px
+      font-size: 14px
+      text-align: center
+      line-height: 25px
+      padding: 0 5px
+
+
+    &__icon
+      display: inline-block
+
+
+
+  .user-menu
+
+    &__avatar
+      display: inline-block
+      img
+        width: 36px
+        height: 36px
+        border-radius: 36px
+
+    &__name
+      display: inline-block
+      color: #3a6cbc
+      +mobile
+        display: none

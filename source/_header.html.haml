@@ -1,0 +1,75 @@
+//top wrapper
+.top-wrapper
+  /header section
+  %header.header
+    .row
+      .col-md-2
+        .header-brand
+          = link_to "./index.html", :relative => true do
+            = image_tag "humantelligence-blue.svg", class: "header-brand__image"
+
+      .col-md-3.col-4.header__menu-container
+        .main-menu
+          = link_to "#dropdown", class: 'main-menu__toggler toggle-menu' do
+            = image_tag "hamburguer.svg"
+
+          = link_to "#dropdown", class: 'main-menu__current toggle-menu' do
+            = yield_content :current_menu_option
+
+          //dropdown menu
+          %ul.dropdown#dropdown
+            %li.dropdown__item.dropdown__item--first
+              %span.dropdown__text
+                Menu
+
+            %li.dropdown__item
+              = link_to "./index.html", :relative => true, class: 'dropdown__link' do
+                = image_tag "SA.png", class: 'dropdown__image'
+                %span.dropdown__text
+                  Self Assessment
+
+            %li.dropdown__item
+              = link_to "./talent-fit-for-recluting.html", :relative => true, class: 'dropdown__link' do
+                = image_tag "TF.png", class: 'dropdown__image'
+                %span.dropdown__text
+                  Talent Fit for Recluting
+
+            %li.dropdown__item
+              = link_to "./culture-analytics.html", :relative => true, class: 'dropdown__link' do
+                = image_tag "CA.png", class: 'dropdown__image'
+                %span.dropdown__text
+                  Culture Analytics
+
+            %li.dropdown__item
+              = link_to "./engagement-suite.html", :relative => true, class: 'dropdown__link' do
+                = image_tag "ES.png", class: 'dropdown__image'
+                %span.dropdown__text
+                  Engagement Suite
+
+            %li.dropdown__item
+              = link_to "./admin.html", :relative => true, class: 'dropdown__link' do
+                = image_tag "admin.png", class: 'dropdown__image'
+                %span.dropdown__text
+                  Admin
+
+      .col-md-7.col-8
+        //controls
+        %ul.main-controls
+          %li.main-controls__item.search
+            = link_to "# " do
+              = image_tag "search.svg", class: 'main-controls__icon'
+
+          %li.main-controls__item.notifications
+            = link_to "# " do
+              = image_tag "bell.svg", class: 'main-controls__icon notifications__icon'
+              .notifications__counter
+                8
+
+          %li.main-controls__item.user-menu
+            = link_to "# " do
+              .user-menu__avatar
+                = image_tag "user.jpg", class: 'user-menu__image'
+              .user-menu__name
+                Pedro
+
+  = yield_content :sub_header
