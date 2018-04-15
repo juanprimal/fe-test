@@ -1,0 +1,8 @@
+/*** fonts ** */
+@font-face {
+  font-family: "proximanova-regular";
+  src: url("../fonts/proxima-nova/proximanova-regular.eot");
+  src: url("../fonts/proxima-nova/proximanova-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/proxima-nova/proximanova-regular.woff2") format("woff2"), url("../fonts/proxima-nova/proximanova-regular.woff") format("woff"), url("../fonts/proxima-nova/proximanova-regular.ttf") format("truetype"), url("../fonts/proxima-nova/proximanova-regular.svg#svgFontName") format("svg");
+  font-family: "proximanova-semibold";
+  src: url("../fonts/proxima-nova/proximanova-semibold.eot");
+  src: url("../fonts/proxima-nova/proximanova-semibold.eot?#iefix") format("embedded-opentype"), url("../fonts/proxima-nova/proximanova-semibold.woff2") format("woff2"), url("../fonts/proxima-nova/proximanova-semibold.woff") format("woff"), url("../fonts/proxima-nova/proximanova-semibold.ttf") format("truetype"), url("../fonts/proxima-nova/proximanova-semibold.svg#svgFontName") format("svg"); }
