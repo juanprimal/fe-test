@@ -16,8 +16,9 @@ $(function () {
   });
 
   //tabs extra content for CTAs
-  $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
-    var tabIndex = $(e.target).closest('li').index();
+  $('body').on('click', '.custom-tabs .nav-tabs .nav-link', function(event) {
+    event.preventDefault();
+    var tabIndex = $(this).closest('li').index();
     $('.tab-content-extra .tab-pane').removeClass('active');
     $('.tab-content-extra .tab-pane').eq(tabIndex).addClass('active');
   });

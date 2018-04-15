@@ -13,6 +13,9 @@ h1 {
   font-size: 24px;
   color: #424242;
   margin: 0 0 16px 0; }
+  @media screen and (max-width: 767px) {
+    h1 {
+      text-align: center; } }
 
 a:hover {
   text-decoration: none; }
@@ -180,7 +183,8 @@ a:hover {
     min-width: 24px;
     font-size: 14px;
     text-align: center;
-    line-height: 25px; }
+    line-height: 25px;
+    padding: 0 5px; }
   .main-controls .notifications__icon {
     display: inline-block; }
   .main-controls .user-menu__avatar {
