@@ -15,12 +15,13 @@
   <body>
     <!-- /top wrapper -->
     <div class='top-wrapper'>
-      <div class='header'>
+      <!-- header section -->
+      <header class='header'>
         <div class='row'>
           <div class='col-md-2'>
             <div class='header-brand'>
-              <img src="images/humantelligence-blue.svg" class="header-brand__image" alt="Humantelligence blue" />
-            </div>
+              <a href="./"><img src="images/humantelligence-blue.svg" class="header-brand__image" alt="Humantelligence blue" />
+              </a></div>
           </div>
           <div class='col-md-3 col-4 header__menu-container'>
             <div class='main-menu'>
@@ -29,7 +30,7 @@
                 <span class='main-menu__text'>
                   Self Assessment
                 </span>
-              </a>
+              </a><!-- /dropdown menu -->
               <ul class='dropdown' id='dropdown'>
                 <li class='dropdown__item dropdown__item--first'>
                   <span class='dropdown__text'>
@@ -70,6 +71,7 @@
             </div>
           </div>
           <div class='col-md-7 col-8'>
+            <!-- /controls -->
             <ul class='main-controls'>
               <li class='main-controls__item search'>
                 <a href="#%20"><img src="images/search.svg" class="main-controls__icon" alt="Search" />
@@ -92,8 +94,9 @@
             </ul>
           </div>
         </div>
-      </div>
-      <div class='sub-header'>
+      </header>
+      <!-- secondary header -->
+      <section class='sub-header'>
         <div class='row no-gutters'>
           <div class='col-md-8'>
             <div class='custom-tabs'>
@@ -117,6 +120,7 @@
             </div>
           </div>
           <div class='col-md-4'>
+            <!-- call to action section -->
             <div class='tab-content-extra'>
               <a href="#custom-tabs" class="main-menu__toggler toggle-menu d-md-none float-left"><img src="images/hamburguer-white.png" alt="Hamburguer white" />
               </a>
@@ -138,9 +142,10 @@
             </div>
           </div>
         </div>
-      </div>
+      </section>
     </div>
-    <div class='sub-content'>
+    <!-- site content -->
+    <section class='sub-content'>
       <div class='tab-content'>
         <div aria-labelledby='dashboard-tab' class='tab-pane fade show active' id='dashboard' role='tabpanel'>
           <h1>
@@ -225,6 +230,6 @@
           </div>
         </div>
       </div>
-    </div>
+    </section>
   </body>
 </html>

@@ -24,6 +24,9 @@ $(function () {
 
   //this code is just to load links url faster via ajax and without reloads
   //if don't want to use it just comment
+  //NOTE: this approach don't work for local files, should served by a web server
+  //by @juanprimal
+
   $('body').on('click', '.dropdown .dropdown__link', function(event) {
     event.preventDefault();
     var targetElement = $(this).attr("href");
